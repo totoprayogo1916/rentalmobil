@@ -19,7 +19,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-$routes->setAutoRoute(true);
+// $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -36,7 +36,7 @@ $routes->group('pelanggan', static function ($routes) {
     $routes->get('tambah', 'Customer::create');
     $routes->post('store', 'Customer::store');
     $routes->get('ubah/(:num)', 'Customer::edit/$1');
-    $routes->put('update', 'Customer::update');
+    $routes->post('update', 'Customer::update');
     $routes->delete('delete', 'Customer::delete');
 });
 
@@ -45,7 +45,7 @@ $routes->group('mobil', static function ($routes) {
     $routes->get('tambah', 'Car::create');
     $routes->post('store', 'Car::store');
     $routes->get('ubah/(:num)', 'Car::edit/$1');
-    $routes->put('update', 'Car::update');
+    $routes->post('update', 'Car::update');
     $routes->delete('delete', 'Car::delete');
 });
 
@@ -54,7 +54,7 @@ $routes->group('booking', static function ($routes) {
     $routes->get('tambah', 'Booking::create');
     $routes->post('store', 'Booking::store');
     $routes->get('ubah/(:num)', 'Booking::edit/$1');
-    $routes->put('update', 'Booking::update');
+    $routes->post('update', 'Booking::update');
     $routes->delete('delete', 'Booking::delete');
 });
 
