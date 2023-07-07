@@ -5,12 +5,6 @@ namespace Config;
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
-// Load the system's routing file first, so that the app and ENVIRONMENT
-// can override as needed.
-if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
-    require SYSTEMPATH . 'Config/Routes.php';
-}
-
 /*
  * --------------------------------------------------------------------
  * Router Setup
@@ -21,7 +15,11 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+// The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
+// where controller filters or CSRF protection are bypassed.
+// If you don't want to define all routes, please use the Auto Routing (Improved).
+// Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
+// $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -31,33 +29,32 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-
 $routes->get('/', 'Home::index');
 
-$routes->group('pelanggan', function ($routes) {
+$routes->group('pelanggan', static function ($routes) {
     $routes->get('', 'Customer::index');
     $routes->get('tambah', 'Customer::create');
     $routes->post('store', 'Customer::store');
     $routes->get('ubah/(:num)', 'Customer::edit/$1');
-    $routes->put('update', 'Customer::update');
+    $routes->post('update', 'Customer::update');
     $routes->delete('delete', 'Customer::delete');
 });
 
-$routes->group('mobil', function ($routes) {
+$routes->group('mobil', static function ($routes) {
     $routes->get('', 'Car::index');
     $routes->get('tambah', 'Car::create');
     $routes->post('store', 'Car::store');
     $routes->get('ubah/(:num)', 'Car::edit/$1');
-    $routes->put('update', 'Car::update');
+    $routes->post('update', 'Car::update');
     $routes->delete('delete', 'Car::delete');
 });
 
-$routes->group('booking', function ($routes) {
+$routes->group('booking', static function ($routes) {
     $routes->get('', 'Booking::index');
     $routes->get('tambah', 'Booking::create');
     $routes->post('store', 'Booking::store');
     $routes->get('ubah/(:num)', 'Booking::edit/$1');
-    $routes->put('update', 'Booking::update');
+    $routes->post('update', 'Booking::update');
     $routes->delete('delete', 'Booking::delete');
 });
 
@@ -74,6 +71,6 @@ $routes->group('booking', function ($routes) {
  * You will have access to the $routes object within that file without
  * needing to reload it.
  */
-if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
+if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }

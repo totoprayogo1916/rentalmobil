@@ -9,43 +9,43 @@ class CreateBookingsTable extends Migration
     public function up()
     {
         $this->forge->addField([
-            'id'       => [
+            'id' => [
                 'type'           => 'INT',
                 'constraint'     => '5',
                 'unsigned'       => true,
-                'auto_increment' => true
+                'auto_increment' => true,
             ],
-            'customers_id'     => [
-                'type'           => 'INT',
-                'constraint'     => '5',
-                'unsigned'       => true
+            'customers_id' => [
+                'type'       => 'INT',
+                'constraint' => '5',
+                'unsigned'   => true,
             ],
-            'cars_id'    => [
-                'type'           => 'INT',
-                'constraint'     => '5',
-                'unsigned'       => true
+            'cars_id' => [
+                'type'       => 'INT',
+                'constraint' => '5',
+                'unsigned'   => true,
             ],
-            'start'    => [
-                'type'           => 'date',
-                'null'           => true
+            'start' => [
+                'type' => 'date',
+                'null' => true,
             ],
-            'end'    => [
-                'type'           => 'date',
-                'null'           => true
+            'end' => [
+                'type' => 'date',
+                'null' => true,
             ],
-            'status'    => [
-                'type'           => 'ENUM',
-                'constraint'     => ['pending', 'in_progress', 'done'],
-                'default'        => 'pending',
+            'status' => [
+                'type'       => 'ENUM',
+                'constraint' => ['pending', 'in_progress', 'done'],
+                'default'    => 'pending',
             ],
-            'created_at'    => [
-                'type'           => 'datetime',
-                'null'           => true
+            'created_at' => [
+                'type' => 'datetime',
+                'null' => true,
             ],
-            'updated_at'    => [
-                'type'           => 'datetime',
-                'null'           => true
-            ]
+            'updated_at' => [
+                'type' => 'datetime',
+                'null' => true,
+            ],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('customers_id', 'customers', 'id', 'CASCADE', 'RESTRICT');
