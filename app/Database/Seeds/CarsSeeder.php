@@ -16,240 +16,240 @@ class CarsSeeder extends Seeder
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Toyota Avanza Putih',
                 'total'      => 3,
                 'price'      => 500000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
             [
                 'type'       => 'Kijang Innova Hitam',
                 'total'      => 2,
                 'price'      => 400000,
                 'created_at' => Time::now(),
-                'updated_at' => Time::now()
+                'updated_at' => Time::now(),
             ],
-            
+
         ];
 
         // Using Query Builder

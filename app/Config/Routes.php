@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->group('pelanggan', function ($routes) {
+$routes->group('pelanggan', static function ($routes) {
     $routes->get('', 'Customer::index');
     $routes->get('tambah', 'Customer::create');
     $routes->post('store', 'Customer::store');
@@ -40,7 +40,7 @@ $routes->group('pelanggan', function ($routes) {
     $routes->delete('delete', 'Customer::delete');
 });
 
-$routes->group('mobil', function ($routes) {
+$routes->group('mobil', static function ($routes) {
     $routes->get('', 'Car::index');
     $routes->get('tambah', 'Car::create');
     $routes->post('store', 'Car::store');
@@ -49,7 +49,7 @@ $routes->group('mobil', function ($routes) {
     $routes->delete('delete', 'Car::delete');
 });
 
-$routes->group('booking', function ($routes) {
+$routes->group('booking', static function ($routes) {
     $routes->get('', 'Booking::index');
     $routes->get('tambah', 'Booking::create');
     $routes->post('store', 'Booking::store');
