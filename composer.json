@@ -34,7 +34,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "csfix": "./vendor/bin/php-cs-fixer fix",
-        "test": "phpunit"
+        "csfix": "./vendor/bin/php-cs-fixer fix"
     }
 }
