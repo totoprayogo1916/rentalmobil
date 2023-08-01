@@ -11,7 +11,7 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "codeigniter4/framework": "4.3.5"
+        "codeigniter4/framework": "4.3.7"
     },
     "require-dev": {
         "codeigniter/coding-standard": "^1.1",
@@ -34,7 +34,6 @@
         "sort-packages": true
     },
     "scripts": {
-        "csfix": "./vendor/bin/php-cs-fixer fix",
-        "test": "phpunit"
+        "csfix": "./vendor/bin/php-cs-fixer fix"
     }
 }
