@@ -22,7 +22,6 @@ class BookingModel extends Model
             ->join('cars', 'cars.id = bookings.cars_id')
             ->get()
             ->getResultArray();
-
     }
 
     public function getBooking($id)

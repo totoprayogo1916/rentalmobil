@@ -17,28 +17,23 @@ class Customer extends BaseController
 
     public function index()
     {
-
         $data['header']['title'] = 'Daftar Pelanggan';
 
         $data['customers'] = $this->customerModel->findAll();
 
         return view('pages/customer/index', $data);
-
     }
 
     public function create()
     {
-
         $data['header']['title'] = 'Tambah Data Pelanggan';
         $data['validation']      = $this->validation;
 
         return view('pages/customer/create', $data);
-
     }
 
     public function store()
     {
-
         if (! $this->validate([
             'name' => [
                 'rules'  => 'required',
@@ -77,12 +72,10 @@ class Customer extends BaseController
         }
 
         return redirect()->to('pelanggan')->with('danger', 'Data pelanggan gagal ditambah');
-
     }
 
     public function edit($id)
     {
-
         $data['customer']        = $this->customerModel->find($id);
         $data['validation']      = $this->validation;
         $data['header']['title'] = 'Ubah data' . $data['customer']['name'];
@@ -92,7 +85,6 @@ class Customer extends BaseController
 
     public function update()
     {
-
         $customerOld = $this->customerModel->find($this->request->getPost('id'));
         if ($customerOld['phone'] === $this->request->getPost('phone')) {
             $phoneRule = 'required|numeric';
@@ -139,12 +131,10 @@ class Customer extends BaseController
         }
 
         return redirect()->to('pelanggan')->with('danger', 'Data pelanggan gagal diubah');
-
     }
 
     public function delete()
     {
-
         $id = $this->request->getPost('id');
 
         $result = $this->customerModel->delete($id);
