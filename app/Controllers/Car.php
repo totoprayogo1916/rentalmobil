@@ -17,28 +17,23 @@ class Car extends BaseController
 
     public function index()
     {
-
         $data['header']['title'] = 'Daftar Mobil';
 
         $data['cars'] = $this->carModel->findAll();
 
         return view('pages/car/index', $data);
-
     }
 
     public function create()
     {
-
         $data['header']['title'] = 'Tambah Mobil';
         $data['validation']      = $this->validation;
 
         return view('pages/car/create', $data);
-
     }
 
     public function store()
     {
-
         if (! $this->validate([
             'type' => [
                 'rules'  => 'required',
@@ -77,12 +72,10 @@ class Car extends BaseController
         }
 
         return redirect()->to('mobil')->with('danger', 'Data mobil gagal ditambah');
-
     }
 
     public function edit($id)
     {
-
         $data['car']             = $this->carModel->find($id);
         $data['validation']      = $this->validation;
         $data['header']['title'] = 'Ubah ' . $data['car']['type'];
@@ -131,12 +124,10 @@ class Car extends BaseController
         }
 
         return redirect()->to('mobil')->with('danger', 'Data mobil gagal diubah');
-
     }
 
     public function delete()
     {
-
         $id = $this->request->getPost('id');
 
         $result = $this->carModel->delete($id);

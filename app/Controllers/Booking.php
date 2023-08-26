@@ -17,30 +17,25 @@ class Booking extends BaseController
 
     public function index()
     {
-
         $data['header']['title'] = 'Daftar Booking Mobil';
 
         $data['bookings'] = $this->bookingModel->getBookings();
 
         return view('pages/booking/index', $data);
-
     }
 
     public function create()
     {
-
         $data['header']['title'] = 'Tambah Data Booking Mobil';
         $data['customers']       = $this->bookingModel->getCustomers(['id', 'name', 'phone']);
         $data['cars']            = $this->bookingModel->getCars(['id', 'type', 'total', 'price']);
         $data['validation']      = $this->validation;
 
         return view('pages/booking/create', $data);
-
     }
 
     public function store()
     {
-
         if (! $this->validate([
             'customers_id' => [
                 'rules'  => 'required',
@@ -78,12 +73,10 @@ class Booking extends BaseController
         }
 
         return redirect()->to('booking')->with('danger', 'Data booking mobil gagal ditambah');
-
     }
 
     public function edit($id)
     {
-
         $data['header']['title'] = 'Tambah Data Booking Mobil';
         $data['customers']       = $this->bookingModel->getCustomers(['id', 'name', 'phone']);
         $data['booking']         = $this->bookingModel->getBooking($id);
@@ -143,12 +136,10 @@ class Booking extends BaseController
         }
 
         return redirect()->to('booking')->with('danger', 'Data booking gagal diubah');
-
     }
 
     public function delete()
     {
-
         $id = $this->request->getPost('id');
 
         $result = $this->bookingModel->delete($id);
